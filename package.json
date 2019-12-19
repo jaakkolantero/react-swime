@@ -1,22 +1,23 @@
 {
-  "name": "react-component-library",
-  "version": "1.0.0",
+  "name": "react-swime",
+  "version": "0.1.0",
   "main": "build/index.js",
   "module": "build/index.es.js",
   "jsnext:main": "build/index.es.js",
   "files": [
     "build"
   ],
-  "description": "A skeleton for your React Component library using Rollup, TypeScript, Sass and Storybook",
+  "description": "React Swipe Menu",
   "scripts": {
     "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "commit": "npx git-cz"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HarveyD/react-component-library.git"
+    "url": "git+https://github.com/jaakkolantero/react-swime"
   },
   "keywords": [
     "React",
@@ -24,15 +25,14 @@
     "Library",
     "Rollup",
     "Typescript",
-    "Sass",
     "Storybook"
   ],
-  "author": "Harvey Delaney",
-  "license": "ISC",
+  "author": "Tero Jaakkola",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/HarveyD/react-component-library/issues"
+    "url": "https://github.com/jaakkolantero/react-swime/issues"
   },
-  "homepage": "https://github.com/HarveyD/react-component-library#readme",
+  "homepage": "https://github.com/jaakkolantero/react-swime#readme",
   "dependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
@@ -45,13 +45,17 @@
     "@storybook/react": "^5.2.6",
     "@types/react": "^16.9.12",
     "babel-loader": "^8.0.6",
+    "cz-conventional-changelog": "^3.0.2",
     "rollup": "^1.27.4",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
-    "rollup-plugin-sass": "^1.2.2",
     "rollup-plugin-typescript2": "^0.25.2",
-    "sass-loader": "^8.0.0",
     "typescript": "^3.7.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

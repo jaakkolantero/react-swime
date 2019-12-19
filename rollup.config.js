@@ -1,5 +1,4 @@
 import typescript from "rollup-plugin-typescript2";
-import sass from "rollup-plugin-sass";
 import commonjs from "rollup-plugin-commonjs";
 import external from "rollup-plugin-peer-deps-external";
 import resolve from "rollup-plugin-node-resolve";
@@ -44,9 +43,6 @@ export default {
         ],
         "node_modules/react-dom/index.js": ["render"]
       }
-    }),
-    sass({
-      insert: true
     })
   ]
 };
